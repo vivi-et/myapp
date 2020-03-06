@@ -39,6 +39,7 @@ Route::get('about', function () {
     return view('pages.about');
 });
 
+
 Route::get('make', function () {
     return view('make');
 });
@@ -62,4 +63,9 @@ Route::get('services', 'PagesController@services');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('values', function () {
+    return view('values');
+});
 

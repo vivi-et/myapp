@@ -18,6 +18,11 @@ class PagesController extends Controller
     // {
     //     return view('pages.about');
     // }
+
+
+
+
+
     public function services()
     {
         $data = array(
