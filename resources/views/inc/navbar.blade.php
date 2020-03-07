@@ -1,7 +1,15 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 
+  <style>
+    
+    .navbar {
+      margin-bottom: 10px;
+    }
+
+  </style>
+
   @if (Auth::check())
-  <a class="navbar-brand" href="/home">{{config('app.name', 'envProjectName')}}</a>
+  <a class="navbar-brand" href="/">{{config('app.name', 'envProjectName')}}</a>
   @else
   <a class="navbar-brand" href="/">{{config('app.name', 'envProjectName')}}</a>
   @endif
@@ -21,13 +29,13 @@
         @endif
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/about">About</a>
+        <a class="nav-link" href="/about">뼈대2</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="/services" tabindex="-1" aria-disabled="true">Services</a>
+        <a class="nav-link " href="/services" tabindex="-1" aria-disabled="true">뼈대3</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="/posts" tabindex="-1" aria-disabled="true">Blog</a>
+        <a class="nav-link " href="/posts" tabindex="-1" aria-disabled="true">게시판</a>
       </li>
 
       <li class="nav-item dropdown">

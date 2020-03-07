@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>Welcome to About</h1>
-<p>This is laravel about page</p>
+<h1>뭐</h1>
+<p>뼈대2</p>
 
 @endsection
