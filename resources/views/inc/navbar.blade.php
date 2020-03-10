@@ -23,9 +23,9 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         @if (Auth::check())
-        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/dashboard">Dashboard <span class="sr-only">(current)</span></a>
         @else
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">Dashboard <span class="sr-only">(current)</span></a>
         @endif
       </li>
       <li class="nav-item">

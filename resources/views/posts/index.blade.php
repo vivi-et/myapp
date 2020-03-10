@@ -9,7 +9,8 @@
     .fit-image{
 width: 100%;
 object-fit: cover;
-height: 100px; only if you want fixed height
+height: 100px; 
+/* only if you want fixed height */
 }
 </style>
 
@@ -22,7 +23,7 @@ height: 100px; only if you want fixed height
             <div class="col-md2- col-sm-2">
                 <img class="img-responsive fit-image" src="/storage/cover_images/{{$post->cover_image}}">
             </div>
-            <div class="col-md6- col-sm-6">
+            <div class="col-md8- col-sm-8">
                 <h3>
                     <a href="/posts/{{$post->id}}">{{$post->title}} </a>
                 </h3>

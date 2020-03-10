@@ -1,4 +1,5 @@
 <?php
+
 use App\Http\Controllers;
 use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
@@ -47,6 +48,7 @@ Route::get('make', function () {
 
 
 Route::get('services', 'PagesController@services');
+Route::get('test', 'PagesController@test');
 
 
 // Route::group(['middleware' => ['auth']], function () {
@@ -64,10 +66,9 @@ Route::get('services', 'PagesController@services');
 
 Auth::routes();
 
-Route::get('home', 'HomeController@index')->name('home');
+Route::get('dashboard', 'DashboardController@index')->name('dashboard');
 
 
 Route::get('values', function () {
     return view('values');
 });
-
